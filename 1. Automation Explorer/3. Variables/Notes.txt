@@ -1,0 +1,75 @@
+
+Learning goals:
+
+1. Explain what variables are and what they are used for.
+
+2. Create and configure variables in an automation project.
+
+3. List the UiPath Automation best practices when working with variables.
+
+
+
+Variable contains a name, type, scope, and optionally default value.
+
+Definition of a variable:
+Storage location that can hold multiple values of the same datatype.
+
+
+Good practices with variables:
+- use meaningful names for variables.
+- Use Pascal Case
+
+Variables can be created:
+- In the Variables panel, by adding a new line at the bottom.
+- Activity properties panel, by pressing Ctrl + K
+- From the body of an Activity by pressing Ctrl + K, or right clicking and selecting "Create Variable" option in an input field that can accept variables
+- Data Manager Panel, by clicking new variable
+- And by right clicking the activity and pressing "Create Variable", this works only the scope of the activity
+
+
+There are 4 main ways for a variable to be created:
+- Data Manager:
+	- Click "New Variable"
+- Body of an Activity
+	- Press Ctrl + K
+	- Right clicking and selecting "New Variable"
+	- Scoped to the scope of the sequence the activity takes place in
+- Properties Panel:
+	- Press Ctrl + K
+- Variables panel:
+	- Adding new line
+
+
+A workflow is made of activities, interconnected through variables to form a routine.
+
+Routine typically has an input and an output. It defines the flow of automation.
+
+
+Predefined workflow layouts:
+- Sequences
+- Flowcharts
+- State Machines
+
+The fastest, most reliable, and useful way of automating a process is to break it down into smaller bits. 
+
+Arguments contain a direction:
+- In
+	- Only to input data that the invoked workflow
+- Out
+	- Only to extract data from the invoked workflow
+- In/Out
+	- Works both ways.
+
+An argument direction should always prefix the name of the argument e.g. out_Sum
+
+Creating arguments in activity panel:
+- From the activity panel in an avtivity input field
+	- Select In or Out argument fron context menu
+	- Alternatively press Ctrl+M or Ctrl+Shift+M
+- From Expression Editor:
+	- Selet a part of the expression and press Ctrl+M (for In) or Ctrl+Shift+M (for Out)
+
+
+
+
+

@@ -1,0 +1,78 @@
+Explore Automation Development with UiPath Studio:
+
+UiPath studio:
+- Studio is used to build automation projects
+- Publishes as nuget packages either locally or in Orchestrator
+
+UiPath Orchestrator:
+- Automation projects published in Orchestrator are stored as packages along with their version
+- If a project is updated, then the new version is stored as a separate package
+- To run packages, published pacakges needs to be associated with folders
+- When a package is paired with a folder, it becomes a process and can be run by robots with acess to that folder
+- In cases where there are multiple Orchestrators, the packages that the robots need to execute jobs are kept in an external storage location 
+- When the user publishes a package when there are multiple orchestrators, the orchestrator that recieves the package moves the package to the external storage
+
+
+UiPath Robots:
+- Human users can trigger robots using the UiPath Assistant tool
+- Robots triggered by humans using the UiPath Assistant tool for attended robots
+- Robots running on separate machines without human intervention are called unattended robots
+- Unattended robots are triggered and managed from Orchestrator
+- With both attended and unattended robots, process execution is done through jobs
+- Communication between the Orchestrator and the Robot is always triggered by the robot
+- Communication from the robot to the Orchestrator is done by the Robot Service component of the robot with the use of a heartbeat mechanism (happens with both attended and unattended)
+- Every 30 seconds, the Robot Service sends a heartbeat to the Orchestrator and waits for the Orchestrator to respond
+- If there is a job to be done, the orchestrator responds to the heartbeat
+- When a robot runs a job for the first time, it will not have the workflow available locally, the robot then requests the workflow from the Orchestrator, which then goes to the storage location, retrieves the correct workflow from the external storage and passes it to the robot (Only when there are multiple Orchestrators?)
+- Attended robots can have different triggering mechanisms via UiPath Assistant, such as opening an application or receiving an email
+
+UiPath Assistant:
+- Provices a friendly user interface to interact with attended rovots
+
+Unattended robots
+- Meant to work non-stop, with as little input from human users as possible
+- Deployed on separate machines and their jobs are exclusively triggered from Orchestrator
+- Interactions with human users are typically handled with as little disruption as possible, by creating and sending requests for human input or validation as tasks
+- While waiting for human input, unattended robots can continue their work by picking up other jobs. When they receive human input, the unattended robots can resume work on the process.
+
+Automation Cloud Robots
+- ACR
+- Software as a service
+- Hosted in UiPath Automation Cloud
+- Lets user quickly run automations without building or managing their own unattended Robot infrastructure
+- Two types:
+	- VM automation Cloud Robots
+		- Access to a fully customizable Windows virtual machine
+	- Serverless Automation Cloud Robots (Linux based cloud robots)
+		- Run background, cross-platforms
+
+Test Robots
+- Can execure test on-demand continuously
+- Built for testing workflows, activities, and applications
+- Provides flexibility in managing and reusing test cases across projects
+- Enables activity level unit testing out-of-the-box
+
+Orchestrator
+- Allows managing, controlling, and monitoring the robots and the automations.
+- Can deploy, trigger, measure, provision, track, and ensure security of every robot in the organization.
+- Also functions as a repository for libraries, reusable components, assets, and processes used by the robots or developers.
+- Main capabilities:
+	- Provisioning: creates and maintains connections with the robots.
+	- Control and license distribution: Enables the creation, assignment and maintenance of licenses, roles, permissions, groups, and the folder hierarchies.
+	- Automation storage and distribution: allows controlled storage and distribution of automation projects, assets, and credentials, as well as large files used in automations.
+	- Running automation jobs in unattended mode: creation and distribution of automation jobs, including through queues and triggers.
+	- Monitoring: allows monitoring of jobs and robots and stores logs for auditing and analytics
+
+
+Process:
+- If stored locally, packages can be used as processes when they are run by attended robots.
+
+
+Questions:
+- What exactly is a workflow?
+
+
+
+
+
+

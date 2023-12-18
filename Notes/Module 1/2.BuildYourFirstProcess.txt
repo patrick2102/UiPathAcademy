@@ -1,0 +1,68 @@
+User interface:
+Tools panel allows:
+- UI Explorer, Project dependencies Mass Update, and Repair tool
+- UIPath Extensions
+- Plugins
+
+Compatibility when creating a new project:
+- Windows uses .Net 5 with windows support
+- Cross platform uses.Net 5 with cross-platform compatibility, which needed for robots running on linux machines
+- Legacy uses .Net Framework 4.6.1
+
+Center of screen has Designer panel:
+- Displays current process
+
+Left has activities panel:
+- Can search activities by name and description:
+- Drag and drop from activites panel to Designer panel is possible
+
+
+Sequences are the smallest type of project
+
+Right click on sequence to add annotation
+
+Project panel can be accessed by pressing the bottom left icon called Project
+- Enables watching the contents of the current project
+- Add folders
+- Open file locations
+- Manage dependencies
+- Adjust project settings
+- Files from file explorer can be directly copied into the project panel
+- Workflow analyzer in the project settings allows to set rules to check for inconsistencies that aren't related to the project execution itself
+- Test manager can be accessed from the project settings here
+- To manage dependencies, right click the dependencies in the project panel and select manage
+
+Data manager panel:
+- Handles variables, constants, queues, etc.
+
+
+Wizards and UI Explorer are only available if you install the UiPath UIAutomation Activities packages
+
+SlowStop in Debug allows us to look closer to an activity while it is running during debugging
+
+Backstage view:
+- Initial view with options like: open, close, start, etc.
+
+Ribbon:
+- Contains buttons to change the view from
+- Home: Where projects can be created or opened
+- Design: Where sequences, flowcharts, export workflows to Excel, etc.
+- Debug: debug the workflow, step by step, etc.
+
+Command palette:
+- Not mentioned in the video, yippie!
+
+Panels:
+- Designer, Activities, Properties, Output, and Data manager.
+
+Status bar:
+- Not mentioned in the video, yippie!
+
+
+
+Steps in automation implementation process:
+- Capturing 'as-is' and 'to-be' process steps:
+- Dcoumenting the process steps: process steps are documented within a Process Definition Document (PDD)
+- Signing off the PDD: The project manager signs-off the PDD
+- Designing the solution: Solution Architect designs a future state flow and maps out the modules
+- Developing the solution: Automation developers create the modules using the PDD and Solution Design Document (SSD)
