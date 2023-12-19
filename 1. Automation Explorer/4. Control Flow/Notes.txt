@@ -1,0 +1,47 @@
+Sequences:
+- In Sequences, the steps of a process execute in a clear sequential succession. Decision trees are rarely used.
+
+
+
+Flowcharts
+- In Flowcharts, the individual activities are a bit more difficult to read and edit, but the execution flow between them is much clearer. 
+
+
+Control flow statements:
+- Conditional
+	- If
+	- Else If
+	- Switch
+- Loops
+	- While
+	- Do While
+	- For Each
+
+
+Best practices:
+1. Sequences are best suited for simple scenarios when there are few if any decisions.
+2. Flowcharts are best suited for when multiple decisions need to be taken
+3. IF are good for short balanced branches. Nested IFs should be avoided.
+4. 
+5.
+6. When using Switch activities, always include a default case to handle unexpected cases that may occur. 
+7.
+
+
+Else If Activity contains a series of conditions, with then statements inside. Very similar to switches
+
+
+Do While:
+- Execute once then check again
+
+While:
+- Check then execute if condition is met. Repeat.
+
+For Each:
+- Goes through each item in a collection.
+
+
+Main difference between Do While and While:
+- Do While runs at least once. While checks condition first, which might make it not run at all.
+
+

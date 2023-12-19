@@ -1,0 +1,12 @@
+Learning goals:
+
+1. Explain the structure of selectors
+2. Identify the types of selectors
+3. Demonstrate the functionality and purpose of the Property Explorer tool during editing selectors.
+4. Describe the process of exploring the attributes of a User Interface element
+5. Evaluate and interpret the visual tree hierarchy of a web page or application
+6. Apply the "Find Children" activity to effectively identify and select child elements within a parent element.
+
+
+
+

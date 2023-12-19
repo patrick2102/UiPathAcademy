@@ -67,9 +67,9 @@ Creating arguments in activity panel:
 	- Select In or Out argument fron context menu
 	- Alternatively press Ctrl+M or Ctrl+Shift+M
 - From Expression Editor:
-	- Selet a part of the expression and press Ctrl+M (for In) or Ctrl+Shift+M (for Out)
+	- Select a part of the expression and press Ctrl+M (for In) or Ctrl+Shift+M (for Out)
 
 
 
-
+Global constants and variables can be created only from the Data Manger panel. 
 

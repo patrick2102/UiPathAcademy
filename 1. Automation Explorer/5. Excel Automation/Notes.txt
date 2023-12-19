@@ -1,0 +1,98 @@
+Learning goals:
+
+1. Provide an overview of Excel automation and its benefits.
+2. Differentiate the ways of working with Excel files and DataTables in UiPath Studio.
+3. Distinguish between the categories of activities used when working with Excel files: Workbook activities and Excel App Integration activities, and use them appropriately.
+4. Differentiate between the design experiences available in UiPath Studio for Excel automation and identify their features.
+5. Explain what are DataTables and how they play a crucial role in automating Excel.
+6. Use the Workbook Activities available in UiPath Studio.
+7. Use the Basic activities of DataTable in UiPath Studio.
+8. Use Excel App integration activities in UiPath Studio.
+9. Use CSV activities in UiPath Studio.
+
+
+
+Excel automation:
+- Microsoft Excel automation is a technique used to automate repetitive or time-consuming tasks in Microsoft Excel using software tools or coding techniques. 
+
+
+Two ways of accessing and manipulating workbooks/Excel is studio:
+1. Workbook of File Aceess Level
+2. Excel or Excel App integration
+
+
+Excel installation required:
+1. Workbook activities: No
+2. App Integration Activities: Yes
+
+
+Compatibility:
+1. Workbook activities: .xlx and .xls
+2. App Integration Activities: .csv, .xlsx, .xls, and .xlsm
+
+
+Functionality:
+1. Workbook activities: Limited to basic Activities.
+2. App Integration Activities: Wide range of activities.
+
+
+Advantages:
+1. Workbook activities: Can be executed in the background without opening an Excel application. Faster and more reliable as a result.
+2. App Integration Activities: Can perform wide range of operations. Including advanced features like macros and pivot tables.
+
+Rant:
+
+"Which of the following statements is true regarding Workbook activities and Excel App Integration activities when working with Excel files? "
+
+"Can be executed in the background without opening the Excel application, resulting in faster and more reliable operations"
+
+Two types of design experiences:
+1. Modern
+2. Classic
+
+
+Three options in regards to Excel experiences in the Project Settings:
+1. This option applies the default design experience set at the studio level. If the studio-level design experience is set to Modern, then this option selects Modern for Excel activities in the project.
+2. UseClassic
+3. UseModern
+
+
+Differences between Modern and Classic experiences in Excel automation:
+1. Workbook or File Access Level: Offers the same set of activites in both the modern and classic experiences
+2. Excel or Excel App integration: Offers different sets of activites depending whether you are using the modern or classic design experiences.
+3. Modern activities support interacting with Excel form the Plus menu option in the designer panel.
+
+Modern design experience is recommended.
+
+
+Data tables:
+- Data table is a type of data structure used to organize and store data in a tabular form, with rows representing records and columns representing the attributes or fields of each record. It is similar to a spreadsheet in Excel, but it is more structured and can be easily manipulated programmatically. 
+
+Why DataTables:
+1. Efficient handling of large amounts of data
+2. Improved data accuracy: DataTables can be used to validate data and ensure accuracy before exporting to Excel.
+3. Programmatic manipulation of data: DataTables can be manipulated programmatically
+4. Better data organization: DataTables can help organize data in a structured format
+5. Integration with other systems: DataTables can be integrated with other systems or applications
+
+
+Workbook activities include:
+- Append Range Workbook: appends data to a specified range in an Excel workbook.
+- Get table Range Workbook: retrieves the range of a table in an Excel workbook.
+- Read Cell Workbook: reads the value of a specific cell in an Excel workbook.
+- Read Cell Formula Workbook: reads the formula of a specific cell in an Excel workbook.
+- Read Column Workbook: reads the values of an entire column in an Excel workbook.
+- Read Range Workbook: reads the values of a specified range of cells in an Excel workbook.
+- Read Row Workbook: reads the values of an entire row in an Excel workbook.
+- Write Cell Workbook: writes a value to a specific cell in an Excel workbook.
+- Write Range Workbook: writes data to a specified range of cells in an Excel workbook.
+
+
+In the Modern Design Experience, all activities specifically tailored for Excel need to be nested within a parent "Use Excel File" activity.
+
+Important note: If the same workflow deals with information from two or more Excel files, a Use Excel Activity has to be used for each file.
+
+
+
+
+

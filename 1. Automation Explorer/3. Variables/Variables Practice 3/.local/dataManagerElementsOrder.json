@@ -1,0 +1,38 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "LineToWrite&Sequence_1",
+        "FlightReservationArray&Sequence_1",
+        "ReturnDate&Sequence_1",
+        "DepartureDate&Sequence_1",
+        "Destination&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FlightReservation.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "FlightReservation&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "FlightReservation"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
