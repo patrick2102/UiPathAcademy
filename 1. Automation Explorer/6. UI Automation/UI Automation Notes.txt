@@ -1,0 +1,287 @@
+UI Automation definition:
+- UI automation automates interactions with a GUI by performing tasks in the same way a human would.
+
+The first step is to lay out the human path and ensure the automation replicates the user experience accurately. 
+This approach guarantees that the automation process is efficient and effective, while also identifying errors that might be missed during development.
+
+UI Automation key concepts:
+1. UI Automation activities (What to do):
+	- Activities tells the robot what to do. There are 4 types:
+		- Containers: Select a specific app or browser
+		- Input: send input to an app interface
+		- Output: Get input from an app interface
+		- Synchronization: 
+2. Activity properties (How to do it):
+	- Controls how a robot executes an activity. (Wait after finishing, etc.)
+3. Targeting methods
+	- Helps the robot identifying the correct UI Elements to perform an action.
+4. Input and output methods
+	- Tells the robot what technology to send input or get output from an interface.
+5. Recorders
+	- Allows manuall interaction with a user interface, which translates the step by step instructions to a series of activities.
+6. Extraction Wizard 
+	- Scraping wizard that helps you extract structured data automatically.
+7. The object repository
+	- Allows storing UI Element identifiers in a repository.
+8. AI Computer Vision
+	- An AI skill that allows robots to see every element on a screen.
+
+Targeting methods: determine which elements in the UI to interact with.
+
+UI Automation activities: perform the required actions on the targeted UI elements.
+
+Activity properties: configure the behavior of the UI Automation activities.
+
+Input and output methods: provide data to and receive data from the UI elements.
+
+Browser extensions enable automation tools to interact with the user interface of web applications in UI automation projects.
+
+
+Three kinds of targeting methods:
+1. Strict Selectors
+2. Fuzzy Selectors
+3. Image Recognition
+
+
+Target:
+- The UI Element to interact with, e.g. button, dropdown menu, etc.
+- The element we want to perform an action on.
+- All UI Elements can serve as a target, depending on the specific needs of the automation process.
+
+Anchor:
+- Another UI element that helps to uniquely identify it.
+- Example of the name above the name field. The name field itself in this case would be the Target.
+- Ensures that the automation process can correctly identify and interact with the desired UI Element.
+
+A target and anchor pair is called a "Descriptor"
+
+Dynamic target:
+- Allows targeting of UI Elements based on location or position, instead of its contents.
+
+Containers:
+These activities identify the browsers or applications that the process needs to interact with. The Container will execute all activities within it on the same application. These activities include Open Browser, Attach Browser, Open Application, and Use Application/Browser. 
+
+Activities for Synchronization:
+These activities enable the Robot to perform specific actions when specific events on the machine occur based on the UI behavior.
+
+Input activities:
+These activities are used to input data into user interface elements. Other examples would be clicking, checking, typing into, or sending hotkeys. 
+
+Output activities:
+These activities are used retrieve information from GUI Elements. They can instruct the Robot to get text by using various methods, get structured data, or retrieve UI Elements containing images.
+
+
+Activity properties:
+- DelayAfter/DelayBefore 
+	- How many milliseconds the robot waits before or after execution.
+- ContinueOnError
+	- Specifies if robot should continue on error.
+- Target
+	- Provides several options in regards to identifying a UI element.
+- Timeout(seconds)
+	- How many milliseconds will the robot try to perform a specific action on a UI element.
+- Input Mode
+	- What input method is used for input activities.
+- Output
+	- 	Stores the output of the activity in the form of variables.
+
+
+
+
+Input methods:
+- Whenever we insert data into an application or send a command to a system to produce a change or continue, we perform an input action.
+- Hardware events:
+	- Hardware events are essentially the actions we perform using our keyboard or mouse, such as clicking or typing
+	- Directly interacts with the hardware device by sending messages to the OS.
+	- Compatible with all applications, but can't run in the background.
+- SendWindowMessages:
+	- Simulates user interacting with the application.'
+	- When you use this input method, UiPath sends the same messages to an application that the application would receive if a user were to interact with it using a keyboard or mouse.
+	- Allows running in the background without interfering with the user's ability to use their computer.
+- Simulate
+	- Simulate input method designed to mimic our actions in a way that's similar to how we would interact with the application. (What?)
+	- By doing this, the robot can perform actions such as clicking a button or typing in a text box more accurately and consistently.
+	- Not all applications are compatible with Simulate
+- ChromiumAPI:
+	- Nice
+	
+	
+Foreground and background activities:
+- Foreground processes are things you are currently using on your computer.
+- Background processes, on the other hand, run on your computer without your involvement. 
+
+
+Foreground process:
+- Example:
+	- Typing a document
+- Visibility:
+	- Visible and interactive on screen
+- Resource usage:
+	- Uses resources while being actively used
+- Interruptions:
+	- Can be interacted and paused by the user
+- User attention:
+	- Requires attention
+	
+	
+Background process:
+
+- Example:
+	- Antivirus scan
+- Visibility:
+	- Not visible or interactive on screen
+- Resource usage:
+	- Uses resources, but at lower priority. (Is this really always true?)
+- Interruptions:
+	- Generally can't be interrupted or paused by the user.
+- User attention:
+	- Doesn't require attention
+
+Background mode allows data to be input into an application or browser without requiring active user interaction, operating as a background process.
+
+
+How to use background mode:
+- From the the properties panel ->Input mode option.
+- From the dropdown you can select the Background mode option.
+
+Background mode is available only for Use application browser Activity.
+
+
+The following actions aren't compatible with the Background mode:
+- Any activities using image as targeting method.
+- Native text automation.
+- Keyboard shortcuts.
+- Minimizing opened applications.
+- The Take Screenshot Activity.
+
+
+What if the automation includes incompatible actions for Background mode? 
+- It'll run smoothly, but incompatible activities will run in the foreground. However, after the execution, it'll return to the background.
+
+
+Foreground processes are actively used or interacted with by the user, while background processes run on the computer without requiring active user interaction. 
+
+The Background mode option in the Use Application/Browser Activity allows for inputting information into an application or browser without the need for active user interaction, similar to a background process. 
+
+Once enabled, it runs all the activities inside the Do block of Use application browser card in the background by using either Simulate, or ChromiumAPI as an input method.
+
+The main input activities are: 
+- Check/Uncheck
+- Click
+- Go to URL
+- Highlight
+- Hover
+- Keyboard Shortcuts
+- Navigate Browser
+- Select Item
+- Type Into
+
+
+Type Into:
+- Type this:
+	- Standard: for normal text
+	- Secure: meant for passwords
+- Empty field before typing:
+	- None: existing content won't be deleted
+	- Single line: deletes the existing line
+	- Multi line: deletes contents of a field with multiple lines	
+- Click before typing
+	- None: Won't click before typing
+	- Single (default): Click once before typing
+	- Double: click twice before typing
+
+
+The empty field before typing is not relevant when using the "Simulate" input mode as it will always replace all existing text.
+ - Instead there are options in the properties panel.
+ - The click before event is relevant for Hardware Events and the Chromium API input modes.
+	- Not taken into account for all other input methods.
+
+Options - Hardware Events / Chromium API in the properties panel:
+	- Activate:
+		- Brings the UI element to the foreground and activates it before entering the text.
+ 
+
+Important input activities:
+- Click 
+	- This activity is used to simulate a mouse click on a UI element. It can also be used to double-click, right-click, or click and hold on an element.
+- Type Into 
+	- This activity is used to simulate typing text into a text box, field, or any other UI element that accepts input.
+- Select Item 
+	- This activity is used to select an item from a drop-down menu or list box.
+- Check/Uncheck 
+	- This activity is used to check or uncheck a checkbox or radio button.
+- Hover 
+	- This activity is used to simulate a mouse hover over a UI element.
+- Navigate Browser  
+	- This activity is used to navigate to a specific URL or web page.
+- Keyboard Shortcuts 
+	- This activity is used to send keyboard shortcuts to the application.
+
+
+Overview of output methods:
+- FullText:
+	- default method and good enough for most cases. 
+	- Can extract hidden text
+	- 100% accuracy 
+	- Can work in the background
+	- Doesn't support virtual environments.
+	- Default method
+	- Fastest.
+	- Doesn't capture text formatting and positions.
+- Native
+	- The Native method is compatible with applications that use Graphics Design Interface (GDI), the Microsoft API used for representing graphical objects.
+	- Can't extract hidden text.
+	- Can't work in the background
+	- Doesn't support virtual environments.
+	- Somewhat slower than FullText
+	- Can extract text position and formatting.
+- OCR
+	- Works with virtual environments
+	- Can read text from images.
+	- Can't work in the background.
+	- Can't extract hidden text.
+	- Slowest of all.
+	- Accuracy can vary, but be adjusted by chaning the settings
+	- Can capture text position.
+	- Two common examples:
+		-Google Tesseract 
+		- Microsoft MODI
+
+Get Text Activity:
+	- Get Text Activity Extracts and copies the text from a UI element.
+	- Supports following output methods:
+		- Default: 
+			- tries all the output methods, and the first one to return a text is used.
+		- Text attribute: 
+			- uses the "text" attribute of the UI element.
+		- Fulltext: 
+			- this method offers the option to Ignore hidden text, which can be activated by selecting its respective check box.
+		- Native: 
+			- this method enables you to Allow formatting and retrieve the screen coordinates of the words by selecting the check boxes for each of these features.
+	- Get Text Activity provides the Extraction Preview wizard.
+	
+Practice 1 is again unsolvable
+
+
+The App/Web Recorder captures our actions as we perform them on the screen and generates a Use Application/Browser Activity with a series of activities inside it based on our actions.
+- 
+When using the recorder, we can choose the Input Methods as per the requirements.
+- 
+If Full Configuration of Targets and Saved Values mode is enabled, it'll ask for confirmation as you indicate the UI element while recording.
+- 
+After saving the recording, we can edit the generated activities at any time.
+- 
+
+
+Recorder with a "Use Application/Browser":
+- You can only record actions on elements within that application or browser window.
+- This is useful when you want to create targeted automation workflows for specific applications or websites.
+
+Recorder without "Use Application/Browser":
+- You can capture actions on all applications that are open on your computer.
+- This is helpful for automating complex tasks that involve multiple applications, as you can record actions across different applications and combine them into a single workflow.
+
+
+Table Extraction
+- Automates the process of extracting structured data from webpages and applications, converting it into a DataTable for efficient processing
+
