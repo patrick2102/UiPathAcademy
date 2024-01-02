@@ -1,0 +1,6 @@
+The Check App State activity verifies the state of an application or web browser by checking the appearance or disappearance of a specific element.
+It allows for executing different sets of activities based on whether the element is found or not.
+This activity extends beyond checking a single UI element and can observe whether the application is opened or not before performing any action on it.
+It can be used as a condition within the Retry Scope activity, enabling retries based on the application's state.
+Additionally, the Check App State activity can be used independently of the Use Application/Browser activity, providing the flexibility to monitor and control the application or web browser state throughout the automation process.
+

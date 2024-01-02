@@ -1,0 +1,121 @@
+
+Learning goals:
+- Purpose and functionality of UI descriptors
+- Advanced options to help with selection process and how to make precise element choices
+- Target element validation and configuring descriptors to handle various scenarios
+
+
+Introduction to targeting methods:
+- A target refers to a specific UI element that we want to interact with. It could be any component, including buttons, textboxes, etc.
+- An anchor is an UI element that helps identify the target. Useful when potential conflicts are detected in the selection window.
+
+
+Key targeting methods:
+	- Strict selectors
+		- Uses XML fragments to identify user interface elements based on their attributes. 
+	  	They require an exact match to the address and attributes of the element, providing precise targeting. 
+		- Can target only one selector at a time.
+	- Fuzzy selectors
+		- Fuzzy Selectors enable the identification of elements based on patterns or partial matches, allowing for more flexibility. They validate selectors using multiple attributes, accommodating changes during the automation process. 
+		- Can target multiple selectors at a time.
+	- Image
+		-  Image Selection method reads the array of pixels in a visible region of the application window to identify if it matches the target array. It's useful when other targeting methods can't be applied or in virtual machine environments. 
+		
+Window selector:
+	-  the Window Selector targets the entire window or application rather than specific windows within it. It's used when automating UI interactions at the application level. The Window Selector option is available in the "Use Application or Browser" activity when the "Window Attach Mode" property isn't set to "Single window."
+
+
+Unified Targeting Method:
+- The Unified Target method incorporates various methods like Selectors, Fuzzy Selectors, and Images to identify UI elements. 
+- A Unified Target consists of at least one target, along with optional anchors. 
+- Each UI element is located using a stack of targeting methods, including Strict Selectors, Fuzzy Selectors, and Images. 
+- These targeting methods work redundantly, simultaneously attempting to identify the target element. The first method that successfully finds the target is considered. 
+
+
+- To customize the targeting methods used in the Unified Targeting method, you can access the project settings within the UI Automation Modern section.
+
+
+
+Descriptor:
+- Target and anchor pair is called a descriptor
+- Under the hood, the robot generates 9 unique combinations of target anchor pairs. Using the 3 different kinds of targeting methods for the target and the anchor, example: 1 target and 1 anchor produces 9 descriptors. 1 target and 2 anchors produces 3*3*3= 27, and so forth.
+
+
+Validating the Descriptors:
+	- Two options to assess reliability of UI Automation configuration
+		- Show all matches
+			- Helps to identify all the possible matches for the selected element within the automated application.
+			- In the Selection options, select the eye icon.
+		- Target element validation
+			- Generates a score based on the number of correct identifications
+			- Click the validate button in the Selection Options menu.
+
+
+The blue bullseye signifies the fastest method, while the stop sign signifies that the targeting method failed.
+
+
+- Blue bullseye: signifies the fastest targeting method.
+- Checkmark: indicates that the targeting method worked but wasn't the fastest.
+- Duplicate icon: represents the presence of duplicates.
+- Stop sign icon: appears when a targeting method fails to identify any elements.
+
+Advanced Selection Window Options:
+- Selection window advanced features include:
+	- Native Text Target
+	- Enforce visibility
+	- Responsive Websites
+
+
+- Enable Native Text
+	- Enable the "Enable Native text" checkbox and using the Native Text targeting method allows you to interact with elements based on their associated text labels.
+
+- Enforce Visibility
+	- An option that makes sure elements are only selected and interacted with if they are visible on the screen
+	- Can be found under options under the Selection Options window
+	- Three options
+		- None: Duh
+		- Interactive (for Fuzzy Selector): Enables interactions with visible and interactable UI elements during automation. Specifically selects elements that can be clicked, typed into, etc.
+		- Fully visible: Only elements fully visible. Excludes elements that are partially or fully hidden.
+
+- Responsive Websites
+	- Responsive websites are designed to adapt to different screen sizes and orientations. As the layout of a responsive website changes based on the available screen space, the position of elements may also shift. 
+	- Can be found under options under the Selection Options window
+
+
+Fine-Tuning Descriptors:
+- Techniques that can be used for fine tuing descriptors include:
+	- Dynamic text target option
+	- Using wildcards
+	- Repair function
+	- Variables
+	- Adjusting image accuracy
+
+- Key actions for Fine-Tuning Descriptors
+	- Evaluate Targeting Method Reliability
+		- Use the Validation option to assess
+		- Evaluate accuracy and consistency of the different Selectors
+	- Adjust Fuzzy Selector settings
+		- Fine-tune the Fuzzy Selector to handle attribute variations and dynamic elements.
+		- Increase the accuracy in matching the target element.
+	- Optimize Image Targeting
+		- Fine-tune image settings, such as accuracy, to improve matching for dynamic UI elements. 
+	- Prioritize Targeting Methods
+		- Choose the appropriate targeting method based on reliability and effectiveness.
+		- Adjust the order in which the targeting methods are executed to prioritize the most reliable method.
+	- Test and Iterate
+		- Thoroughly test the automation workflow under different scenarios.
+		- Iterate and fine-tune further as necessary to achieve optimal results.
+
+Dynamic Text Target Option:
+- Option that allows interacting with UI elements whose text content changes dynamically.
+- Can be found under the selected target element
+
+ 
+
+
+
+
+
+
+
+

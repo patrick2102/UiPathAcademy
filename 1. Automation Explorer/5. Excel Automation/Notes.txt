@@ -92,6 +92,12 @@ In the Modern Design Experience, all activities specifically tailored for Excel 
 
 Important note: If the same workflow deals with information from two or more Excel files, a Use Excel Activity has to be used for each file.
 
+Video 2, learning objectives:
+- Add formatting to Excel files using Studio's modern experience
+- Perform UI Automation on a consolidated spreadsheet
+- Manipulate data within an Excel file
+- Add graphical representation of data using chart and pivot table activites
+- Enable sheet protection on a consolidated spreadsheet
 
 
 
