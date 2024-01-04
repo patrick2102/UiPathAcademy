@@ -1,0 +1,49 @@
+
+
+Tags:
+	- Nodes in the selector XML fragment.
+	- Corresponds to a visual element on the screen.
+	- The first node is the app window.
+	- The last node is the element itself. 
+	- Examples:
+		- wnd (window)
+		- html (web page)
+		- ctrl (control)
+		- webctrl (web page control)
+		- java (Java application control)
+
+Attributes:
+	- Attributes are the characteristics or properties of an element that help identify and interact with it. They provide specific information about the element, such as its name, ID, class, title, or type.
+	- Examples:
+		- parentid=‘slide-list-container’
+		- tag=‘A’
+		- aaname=‘Details’
+		- class=‘btn-dwnl’
+
+
+Full selectors:
+	- Full selectors contain all the information required to identify a specific UI element, including the top-level window.
+	
+Partial selectors:
+	- partial selectors are specific to container activities, such as "Use Application" or "Browser Activity." These container activities store information related to the top-level window, and the activities within them use partial selectors. Partial selectors don't include information about the top-level window.
+
+
+
+
+UIExplorer key functionalities:
+- validate button
+- visual tree panel
+- tags and attribute display and inclusion/exclusion of tags and attributes
+
+
+Properties explorer
+- The Property Explorer allows users to explore a wide range of attributes that define the characteristics and behavior of the UI element.
+
+Advanced techniques:
+- The Visual Tree is a hierarchical structure that represents the relationships between visual elements in a GUI application. It defines how the elements are organized, nested, and positioned within the user interface. 
+- The Visual Tree is crucial for rendering the UI, handling user interactions, applying styles and themes, and managing the visual hierarchy. It plays a vital role in traversing the UI, handling events, and updating the UI based on data or state changes.
+- The Find Children activity  allows you to search for specific child elements within a parent element based on certain criteria. It helps automate tasks that require interacting with multiple UI elements that share a common parent.
+- By using the Find Children activity, you can specify search parameters like element type, attributes, or other identifying characteristics to locate and retrieve a collection of child elements that match the criteria. 
+- This collection of child elements can then be used for further operations or automation tasks, such as data extraction, interaction, or validation.
+
+

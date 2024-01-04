@@ -110,8 +110,26 @@ Dynamic Text Target Option:
 - Option that allows interacting with UI elements whose text content changes dynamically.
 - Can be found under the selected target element
 
- 
 
+Variables with descriptors:
+- can be selected in the field of the selector by right clicking in the field
+
+
+
+For Each UI Element:
+- Identify the UI elements you want to target.
+- Add the "For Each UI Element" activity to your workflow.
+- Use the "Indicate" option to open the wizard.
+- Select the first UI element and let the wizard automatically select similar elements.
+- Add labels to extract additional information if needed.
+- Preview the extraction and enable data extraction from multiple pages if necessary.
+- Configure filters to select specific items based on conditions.
+- Add activities within the loop to perform actions on each UI element.
+
+
+Image targeting method:
+- can be enabled by selecting the "Image region option" in the Selection option window
+- can also be enabled by clicking f3
 
 
 

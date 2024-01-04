@@ -1,0 +1,17 @@
+System and business exceptions:
+	- 
+	
+	- Errors:
+		- Syntax Errors: compiler/interpreter can't parse code
+		- User Errors: user isn't accepted by software for some reason
+		- Programming Errors: where the program doesn't produce syntax errors, but still fails for some reason
+	- Exceptions:
+		- System Exceptions
+		- business exceptions (BRE)
+			- When a busniess exception occurs, the robot stops and waits for human intervention
+			- Must be defined by the developer
+				
+
+
+
+		

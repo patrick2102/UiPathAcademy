@@ -1,0 +1,33 @@
+
+
+Debugging Features Overview:
+- Locals panel allows the changing of variables on runtime.
+
+
+Types of breakpoints:
+- simple breakpoints:
+	- Pauses execution of an activity
+- conditional breakpoints:
+	- pauses execution of an activity when a condition and/or hit count is met
+- simple trace points:
+	- simple breakpoint with logging
+- conditional trace points:
+	- conditional breakpoint with logging
+
+
+
+Test Activities:
+	- Run from this activity
+	- Run to this activity
+	
+	
+Watch panel:
+	- Allows adding of variables and expressions during debugging.
+	- Variables can be added from the locals panel, the variables panel, and more
+	
+Call stack panel
+	- displays sequence of activities and function calls
+	
+The immediate panel
+	- allows execution of custom expressions and evaluating variables without interrupting the workflow
+	
