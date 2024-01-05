@@ -14,4 +14,10 @@ System and business exceptions:
 
 
 
+Retry scope:
+	- Used for catching and handling errors
+	- Retries the contained activities as long as a condition isn't met, or an error is thrown
+	- Works a lot like a while loop
+
+
 		

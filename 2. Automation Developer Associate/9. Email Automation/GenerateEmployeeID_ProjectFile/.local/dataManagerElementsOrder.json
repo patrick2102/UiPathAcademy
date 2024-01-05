@@ -1,0 +1,31 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "EmailTemplate&Sequence_2",
+        "SenderEmail&Sequence_2",
+        "Attachments&Sequence_2",
+        "receivedEmail&Sequence_2",
+        "ReplyAddress&Sequence_2",
+        "UpdatedIDs&Sequence_2",
+        "AttachmentsFilePath&Sequence_2",
+        "OutputAttachment&Sequence_2",
+        "HeaderColor&Sequence_4",
+        "DataColumn&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
