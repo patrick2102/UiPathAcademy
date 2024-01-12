@@ -1,0 +1,91 @@
+Orchestrator overview:
+	Provisioning:
+		- Orchestrator creates and maintains the connection with robots and attended users.
+	Control and license distribution:
+		- Creates, assigns and maintains:
+			- Licenses
+			- roles
+			- permissions
+			- groups
+			- folder hierarchies
+	Automation storage and distribution
+		- projects
+		- assets
+		- credentials 
+		- large files
+	Monitoring
+		- monitor jobs
+		- monitor robots
+		- logs for auditing and analytics
+	Inter-connectivity
+		- third party solutions and applications
+
+
+Orchestrator entities:
+	- Tenants:
+		- Allows isolation at the organizational level
+	- Folders:
+		- allows isolation at the resource level
+		
+Tentant entities:
+	- From the entities defined above, robots are tenant entities. This means that they can be allocated to multiple folders in that tenant. Using roles and permissions, the way robots work with each of the folders can be customized.
+	
+Packages are published to Orchestrator using feeds. The feeds can be configured to be at tenant level, or at folder level. A package published to the tenant feed can then be used in a process in any of the folders. If it is published using a folder feed, it can't be used for processes in other folders.
+
+
+Orchestrator concepts:
+	- Robot: In Orchestrator, a robot entity represents an image or the Robot component, controlling its connection and capabilities. The robot entity exists only if it is defined in relation to a user/ robot account in Orchestrator. 
+	- folder: Folders enable the separation and hierarchical organization of automation entities (processes, queues, assets) and the fine-grained configuration of roles and permissions.
+	- package: A project developed in UiPath Studio that is published to Orchestrator as a NuGet package. Multiple versions of the same project can be stored and used.
+	- process: It is a version of a package that's been allocated to a certain folder.
+	- job: A job represents the execution of a process on a UiPath Robot. You can launch the execution of a job in either attended or unattended mode. 
+	- heartbeat: Attended and unattended robots send a heartbeat to Orchestrator every 30 seconds. This signals to Orchestrator that the connection is working.
+
+Tenant entities:
+	- Robots
+	- Packages (Can be both tenant level and folder level)
+	- Users
+	- Machine 
+	- Licenses
+	- Webhook
+
+Folder entities
+	- Asset 
+	- storage bucket
+	- queue
+	- trigger
+
+Personal workspaces
+	- A personal workspace is a modern folder available for the dedicated use of a particular attended user.
+
+roles:
+	- Roles are sets of permissions used to control the access of human users and robots to tenant and folder entities.
+
+
+logs in orchestrator
+	- Logs are time-stamped files that contain informational events, errors, and warning messages relevant to the application. 
+
+files cannot be stored in assets
+
+Robot provisioning refers to the process of setting up and configuring robots within Orchestrator.
+
+
+
+
+
+Definitions in UiPath:
+- Tenant: Hierarichal separation for an organization
+	- Robots: 
+	- Folders: Tenant consists of several folders
+	- 
+- Automations
+	- Processes
+	- Jobs
+- 
+- Robot:
+	- 
+
+
+A machine is the physical or virtual workstation where the robot is installed
+
+User has to have the automation user role to run jobs

@@ -1,0 +1,39 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sum A.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_InputTable&Sequence_4",
+        "CurrentRowIndex&Sequence_4",
+        "ExcelRowIndex&Sequence_7",
+        "ValueA&Sequence_7",
+        "ValueB&Sequence_7",
+        "ValueC&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sum B.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_InputTable&Sequence_1",
+        "ValueA&Sequence_2",
+        "ValueB&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

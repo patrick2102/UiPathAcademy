@@ -1,0 +1,35 @@
+Queues are typically used with the Dispatcher-Performer model of running automations:
+
+- The stage in which data is taken and fed into a queue in Orchestrator, from where it can be taken and processed by the robots is called Dispatcher.
+- The stage in which the data is processed is called Performer.
+
+
+Items that have a Deadline, as follows: 
+1. In order of Priority—and
+2. According to the set Deadline for items with the same Priority.
+
+Items with no Deadline, in order of Priority—and
+- According to the rule First In, First Out for items with the same Priority.
+
+After the Stop signal is sent from the orchestrator, the process ends when it is safe to do so. This requires using the Should-Stop activity and a Stop mechanism in a workflow. 
+
+
+Types of business processes:
+- Linear:
+	- Process steps are only executed once
+	-
+- Iterative
+	- The steps of the process are executed multiple times
+	- But each time different data items are used
+	- Example, retrieving multiple emails instead of just one
+- Transactional
+	- similar to iterative
+	- each repeatable part is processed independently
+	- these repeatable parts are called transactions
+	
+	
+
+What is a transaction?
+- A transaction represents the minimum (atomic) amount of data and the necessary steps required to process the data, by fulfilling a section of a business process. A typical example would be a process that reads a single email from a mailbox and extracts data from it.
+
+

@@ -1,0 +1,30 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "test2&Sequence_2",
+        "Values&Sequence_1",
+        "Headers&Sequence_1",
+        "Words&Sequence_2",
+        "dt_Items&Sequence_1",
+        "variable1&Sequence_11",
+        "Items&Sequence_2",
+        "InvoicesFolderPath&Sequence_1",
+        "PDFText&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

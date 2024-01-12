@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Employee Details",
+  "Type": "Element",
+  "TaxonomyType": "None",
+  "Id": "3GQFhiGDn0qBR_noGvkaSA",
+  "Reference": "pcx_zRDDcEqhYM5Ppk-aoQ/3GQFhiGDn0qBR_noGvkaSA",
+  "ParentRef": "pcx_zRDDcEqhYM5Ppk-aoQ/ApTRF3dYFkezT3p87upiIw",
+  "Created": "2024-01-10T15:10:29.3436178Z",
+  "Updated": "2024-01-10T15:10:29.3436178Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

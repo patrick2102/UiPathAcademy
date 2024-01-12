@@ -1,0 +1,177 @@
+{
+  "main": {
+    "id": "e63e42812eabd5d8",
+    "type": "split",
+    "children": [
+      {
+        "id": "e3fb841c6345a370",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "59c9b3872763390c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Object Repository in Studio.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "31942cca154bca0d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "33077dc3852fe403",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "UiPath Studio UI.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "56364e871b250f20",
+    "type": "split",
+    "children": [
+      {
+        "id": "5b4fef2255b78566",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "990a30b84afd9a1c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ce5a8341caec70d7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#How",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "bc22a1505a1785f4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "652b53c4a43738cc",
+    "type": "split",
+    "children": [
+      {
+        "id": "a91e6ca0dfac4646",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "634e90ffe55b5b9d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Object Repository in Studio.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e25f14f7e6800c5e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Object Repository in Studio.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a23d2d58b0b21a01",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "13fa189cbb5a6c92",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Object Repository in Studio.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "59c9b3872763390c",
+  "lastOpenFiles": [
+    "UiPath Studio UI.md",
+    "Object Repository in Studio.md",
+    "Untitled.canvas",
+    "2024-01-10.md",
+    "Object Repository"
+  ]
+}

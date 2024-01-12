@@ -1,0 +1,18 @@
+Build Data Table:
+	- Creates Data Table
+
+Join Data Tables:
+	- Join tables based on columns
+	- e.g. "ID"
+
+Output Data Table:
+	- Converts data table to a string
+	
+Remove Data Column:
+	- Removes a column based on index or column name
+
+
+Sort Data Table:
+	- Sort data table by column specified in the properties panel
+	
+	

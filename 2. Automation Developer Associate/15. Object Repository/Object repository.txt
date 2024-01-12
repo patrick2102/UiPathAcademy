@@ -1,0 +1,48 @@
+Object repository key features:
+1. Centralized  storage
+2. reusability
+3. version control
+4. collaboration
+5. metadata and documentation
+6. search and discovery
+7. dependencies management
+8. security and access control
+
+
+Object repository structure:
+1. Application:
+	- 2 types
+		1. Mobile
+		2. Desktop/web
+2. Version
+	- Applications can have multiple versions
+3. Screen
+	- top-level window of an application can only be created under an app version
+4. UI Element
+	- An object on the screen with a descriptor and metadata. It can be of multiple types.
+	
+Key concepts
+	- UI Descriptors:
+		- A UI Descriptor is a superset of selectors. It holds information for uniquely identifying elements on the screen.
+	- ui applications
+		- A UI Application is a targeted application that can have multiple versions and each version can have multiple screens. 
+	- screens
+		- Screens are UI Scopes that are either extracted from activities inside the workflow or are generated at element capture time. A screen groups together multiple elements belonging to the same screen. 
+	- ui elements
+		- UI Elements contain full or partial element selectors, anchor selectors, screen and element image capture context, and other metadata that describes the element on the screen.
+	- ui libraries
+		- A UI Library is an encapsulation of elements grouped by applications, application versions, and screens. 
+	- ui activities
+		-  UI Activities allows you to view a list of all your UI activities inside your process.
+	
+
+UI Library structure
+	- application > version > screen > ui elements
+
+Object Repository Creation Options 
+	- An object repository is a collection of elements grouped by applications, versions, and screens.
+	- Can come from Local Project or from a library
+	 
+
+
+

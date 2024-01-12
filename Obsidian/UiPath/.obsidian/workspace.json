@@ -1,0 +1,294 @@
+{
+  "main": {
+    "id": "aa1727241dad80f8",
+    "type": "split",
+    "children": [
+      {
+        "id": "98d9b934aa74c0b7",
+        "type": "tabs",
+        "dimension": 25,
+        "children": [
+          {
+            "id": "bdc71c206238925c",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Robotics Enterprise Framework/REFramework.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.7132754626224436,
+                  "close": false
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "3d64a46faaef3df1",
+        "type": "tabs",
+        "dimension": 75,
+        "children": [
+          {
+            "id": "537073b7166389c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Orchestrator/Orchestrator.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8b03eb4c26f3d47b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Robotics Enterprise Framework/REFramework.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cb9d5250149a0d2a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Robotics Enterprise Framework/REFramework.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "637fca81eee603f8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Asset.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1949efebbf19ed81",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Robotics Enterprise Framework/REFramework.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8cbcd79cf9837c46",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Transaction.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b33d2233a63dd7fa",
+    "type": "split",
+    "children": [
+      {
+        "id": "5f5312a72827087c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a8d3eadcfd0a05fd",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e9ed896d4d64c2d9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "cd6ef37cfb6f83c1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "427824c1fd2a1903",
+    "type": "split",
+    "children": [
+      {
+        "id": "ef65a1f37de6c136",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1ab1458bb9b66e4e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Robotics Enterprise Framework/REFramework.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3e93b39b49bbc9ff",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Robotics Enterprise Framework/REFramework.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "09386d91b0d51d92",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "486ede7479f0b021",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Robotics Enterprise Framework/REFramework.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "cb9d5250149a0d2a",
+  "lastOpenFiles": [
+    "Robotics Enterprise Framework/Dispatcher.md",
+    "Robotics Enterprise Framework/Dispatcher and Performer Model.md",
+    "Robotics Enterprise Framework/End Process State (REF).md",
+    "Robotics Enterprise Framework/REFramework.md",
+    "Robotics Enterprise Framework/Process Transaction State (REF).md",
+    "Robotics Enterprise Framework/Get Transaction Data State (REF).md",
+    "Robotics Enterprise Framework/Initialization State (REF).md",
+    "Whiteboard.md",
+    "REFramework without Queue Items Checklist 1.pdf",
+    "UiPath Test Suite.md",
+    "REFramework without Queue Items Checklist.pdf",
+    "Performer.md",
+    "Configuration file.md",
+    "Asset.md",
+    "Robotics Enterprise Framework/REFrameworkArchitecture.png",
+    "Queue.md",
+    "Orchestrator/Orchestrator.md",
+    "Orchestrator",
+    "Process.md",
+    "Application.md",
+    "Transaction.md",
+    "Robotics Enterprise Framework/REFrameworkArchitecture2.png",
+    "linear process.png",
+    "Layout diagrams/sequence diagram.jpg",
+    "Layout diagrams/Layout diagram.md",
+    "Business Process/Transactional process.md",
+    "Business Process/Business process.md",
+    "Business Process/Linear process.md",
+    "Business Process/Iterative process.md",
+    "Business Process",
+    "Robotics Enterprise Framework",
+    "Layout diagrams/State Machine.md",
+    "Layout diagrams/Sequence.md",
+    "Layout diagrams/flowchart diagram.jpg",
+    "Layout diagrams/state machine diagram.jpg",
+    "Layout diagrams/Flowchart.md",
+    "test.canvas",
+    "Layout diagrams"
+  ]
+}

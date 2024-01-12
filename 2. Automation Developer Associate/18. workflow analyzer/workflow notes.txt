@@ -1,0 +1,48 @@
+Workflow Analyzer uses a set of rules to check for various inconsistencies unrelated to project execution. The rules are based on automation best practices and take into consideration variable and argument naming, empty sequences or workflows, package restrictions, and so on. The analyzer does not identify errors during execution or compilation.
+
+What is it?
+- Workflow Analyzer is a static code analyzer that ensures your project meets high quality and reliability standards. 
+
+
+How does it work
+- You can access the Workflow Analyzer options by clicking the Analyze File drop-down menu from the Design ribbon tab. 
+- two step process:
+	1. workflow validation: (compilation error check)
+	2. Analyzes the workflow: (checks for breaches against the defined workflow rules)
+	
+
+Can be enforced the following ways:
+	- Enforce analyzer before run
+	- enforce analyzer before publish
+	- enforce analyzer before push/check-in
+	
+the above can be set in "home->settings->design"
+
+Workflow analyzer rules categories
+- naming rules:
+- design best practices
+- project anatomy rules
+- maintainability and readability rules
+- usage rules
+- performance and reusability rules 
+- reliability rules
+- security rules
+
+
+Workflow analyzer rulese components:
+- each rules has an id, name, descriptionm recommendation, scope and default action
+
+
+
+exporting workflow analyzer results
+- studio backstage view -> settings -> design
+- saved in json format
+- when enabled. the results of each workflow analysis are saved in the json format in the \.local\.analysis\ folder
+- information given for each enabled rule:
+	- RuleId
+	- RuleName
+	- Parameter
+	- Severity
+	- ErrorsDescription
+
+

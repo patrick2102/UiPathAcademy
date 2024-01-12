@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Refresh",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "GBH7nWUqP0GPNRMS_6-Jpw",
+  "Reference": "pcx_zRDDcEqhYM5Ppk-aoQ/GBH7nWUqP0GPNRMS_6-Jpw",
+  "ParentRef": "pcx_zRDDcEqhYM5Ppk-aoQ/ApTRF3dYFkezT3p87upiIw",
+  "Created": "2024-01-10T15:10:29.236359Z",
+  "Updated": "2024-01-10T15:10:29.236359Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
